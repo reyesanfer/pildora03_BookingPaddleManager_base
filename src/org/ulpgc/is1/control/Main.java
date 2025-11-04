@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         PaddleManager manager = new PaddleManager();
         manager.addCustomer("Juan", "Perez", "Gran Via", 123, 28013, "Madrid");
-        manager.addMember("Ana", "Gomez","Tomás Morales", 11, 35000, "LPGC", 0);
+        manager.addMember("Ana", "Gomez", "Tomás Morales", 11, 35000, "LPGC", 0);
         manager.addCourt("Central Court", 20, CourtType.FAST_COURT);
         manager.addCourt("Training Court", 15, CourtType.SLOW_COURT);
         Customer customer1 = manager.getCustomer(0);
@@ -20,6 +20,6 @@ public class Main {
         System.out.println("Price: " + reserve1.price() + " euros");
         Reservation reserve2 = customer2.getReservation(0);
         System.out.println(reserve2.toString());
-        System.out.println("Price: " +reserve2.price() + " euros");
+        System.out.println("Price: " + reserve2.price() + " euros");
     }
 }
